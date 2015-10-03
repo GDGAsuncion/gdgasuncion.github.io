@@ -29,8 +29,18 @@
                 margin: 0 10px 10px;
             }
 
-            .logo-img {
+            .logo-img-apoyan {
                 height: 60px;
+                width: 140px;
+            }
+
+            .logo-img-platinum {
+                height: 100px;
+                width: 140px;
+            }
+
+            .logo-img-silver {
+                height: 80px;
                 width: 140px;
             }
         </style>
@@ -43,15 +53,15 @@
                     <div class="wrap layout horizontal center-center">
                         <template is="dom-repeat" items="[[block.logos]]" as="logo">
                             <a class="logo-item" href="[[logo.url]]" title="[[logo.name]]" target="_blank">
-                                <iron-image class="logo-img flex" src="[[logo.logoUrl]]" preload fade sizing="contain"></iron-image>
+                                <iron-image class="logo-img-silver flex" src="[[logo.logoUrl]]" preload fade sizing="contain"></iron-image>
                             </a>
                         </template>
                     </div>
                 </div>
             </template>
-            <a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
+            <!--<a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
                 <paper-button class="colorful" raised>Become a partner</paper-button>
-            </a>
+            </a>-->
         </div>
     </template>
 </dom-module>
