@@ -1,0 +1,91 @@
+<dom-module id="map-block">
+    <template>
+        <style>
+            :host {
+                display: block;
+                padding: 100px 0;
+                position: relative;
+                overflow: hidden;
+                min-height: 300px;
+            }
+
+            h4 {
+                font-size: 32px;
+            }
+
+            .location-card {
+                min-width: 400px;
+            }
+
+            .bottom-link {
+                color: inherit;
+            }
+
+            @media (min-width: 768px) {
+                .card-container {
+                    padding: 0;
+                }
+                .card-container h5 {
+                    margin-top: 0;
+                }
+            }
+            .bottom-link {
+                color: inherit;
+            }
+        </style>
+        <google-map class="fit" zoom="15" latitude="-25.2872801" longitude="-57.6430857" styles="[[options]]" disable-zoom disable-default-ui>
+            <google-map-marker latitude="-25.2872801" longitude="-57.6430857"></google-map-marker>
+        </google-map>
+        <div class="container card-container relative layout horizontal center-center">
+            <div class="flex-5 hidden-xs"></div>
+            <paper-card class="flex-3">
+                <div class="paper-card-container location-card">
+                    <div class="card-content">
+                        <div class="title">
+                            <h4>Ubicación</h4>
+                        </div>
+                        <p>Universidad Autónoma de Asunción - Auditorio Josefina Plá</br>Jejuí 667, entre O’leary y 15 de Agosto, C.P. 1255. Asunción - Paraguay</p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="bottom-link" href="https://www.google.com/maps/dir//-25.2872801,-57.6430857/@-25.2872801,-57.6430857,18z" target="_blank">
+                            <paper-button on-tap="readMore">Get directions</paper-button>
+                        </a>
+                    </div>
+                </div>
+            </paper-card>
+<!--            <div class="flex hidden-xs"></div>-->
+            <div style="width: 2%;"></div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'map-block',
+        properties: {
+            options: String
+        },
+        attached: function() {
+            this.options = [{
+                stylers: [{
+                    'lightness': 40
+                }, {
+                    'visibility': 'on'
+                }, {
+                    'gamma': 0.9
+                }, {
+                    'weight': 0.4
+                }]
+            }, {
+                'elementType': 'labels',
+                'stylers': [{
+                    'visibility': 'on'
+                }]
+            }, {
+                'featureType': 'water',
+                'stylers': [{
+                    'color': '#5dc7ff'
+                }]
+            }];
+        }
+    });
+</script>
