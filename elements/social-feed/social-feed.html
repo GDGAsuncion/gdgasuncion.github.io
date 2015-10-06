@@ -63,7 +63,7 @@
         },
         feedLoaded: function(event, response) {
             if (response && response.response) {
-                this.posts = response.response;
+                this.posts = response.response.statuses;
                 this.updatePost();
             }
         },
