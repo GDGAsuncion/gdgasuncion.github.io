@@ -21,11 +21,11 @@
 *  Enter your information below this line:
 */
 
-$my_consumer_key        = 'CLjMzNSMat5sqPpRg8za0Asfg';
-$my_consumer_secret     = 'Ov8saEIcwaiI4r0oEYYHWu7s8WojLvIzwsSse4e56EprDQTiZR';
-$my_access_token        = '64026980-qcknXh9Qv3ir9X2Jof4pC9ze4DGvqqyrieKCH9Gd6';
-$my_access_token_secret = 'q8PdrXBVmzfO3Gd8qOZehKjenRt4DsXSZq3EEh0nR0wRM';
-$my_domain              = 'http://gdgasuncion.github.io';
+$my_consumer_key        = 'xxx';
+$my_consumer_secret     = 'yyy';
+$my_access_token        = 'zzz';
+$my_access_token_secret = 'aaa';
+$my_domain              = 'vvv';
 
 
 ?>
