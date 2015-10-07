@@ -6,26 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Oleh Zasadnyy, GDG Lviv">
-    <meta name="description" content="La mejor conferencia de tecnología en Paraguay organizada por la comunidad de GDG Asunción! Charlas, expositores internaciones y nacionales, fiesta y más.">
+    <meta name="description" content="El evento anual más importante de la comunidad de Google Developer Groups llevado a cabo en todo el mundo por más de 500 grupos de desarrolladores.">
     <meta name="keywords" content="event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, asuncion, paraguay, cloud, dfasu">
     <meta name="google-site-verification" content="GxUE9cpxaP54b7Ymknz-fxWBiIUrJOqx1PZ5gkRHGeY" />
-    <link rel="canonical" href="http://devfest.gdg.org.ua/">
+    <link rel="canonical" href="http://gdgasuncion.org/">
     <title>GDG DevFest Asunción 2015 &bull; 10 de Ocutbre</title>
 
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@GDGAsuncion">
     <meta name="twitter:title" content="GDG DevFest Asunción 2015 &bull; 10 de Octubre">
-    <meta name="twitter:description" content="La mejor conferencia de tecnología en Paraguay organizada por la comunidad de GDG Asunción! Charlas, expositores internaciones y nacionales, fiesta y más.">
-    <meta name="twitter:image:src" content="http://devfest.gdg.org.ua/images/seo/seo.jpg">
+    <meta name="twitter:description" content="El evento anual más importante de la comunidad de Google Developer Groups llevado a cabo en todo el mundo por más de 500 grupos de desarrolladores.">
+    <meta name="twitter:image:src" content="http://gdgasuncion.org/images/seo/seo.png">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:title" content="GDG DevFest Asunción 2015 &bull; 10 de Octubre" />
     <meta property="og:site_name" content="GDG DevFest Asunción 2015 &bull; 10 de Octubre" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://devfest.gdg.org.ua/" />
-    <meta property="og:image" content="http://devfest.gdg.org.ua/images/seo/seo.jpg" />
-    <meta property="og:description" content="La mejor conferencia de tecnología en Paraguay organizada por la comunidad de GDG Asunción! Charlas, expositores internaciones y nacionales, fiesta y más."/>
+    <meta property="og:url" content="http://gdgasuncion.org/" />
+    <meta property="og:image" content="http://gdgasuncion.org/images/seo/seo.png" />
+    <meta property="og:description" content="El evento anual más importante de la comunidad de Google Developer Groups llevado a cabo en todo el mundo por más de 500 grupos de desarrolladores."/>
 
     <!-- Chrome for Android theme color -->
     <meta name="theme-color" content="#00BCD4">
@@ -61,7 +61,7 @@
     <template is="dom-bind" id="app">
         <paper-drawer-panel id="paperDrawerPanel" force-narrow>
             <paper-header-panel drawer class="drawer typo-white" mode="seamed" >
-                <paper-toolbar class="tall">
+<!--                <paper-toolbar class="tall">
                     <div class="top">
                         <img class="logo" src="images/logo-white.svg" alt="GDG DevFest 2015">
                     </div>
@@ -77,9 +77,9 @@
                 <paper-menu class="list typo-white" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
                     <a data-route="#!/home" href="/">Home</a>
                     <a data-route="#!/blog" href="/blog">Blog</a>
-                    <!--<a data-route="#!/speakers" href="/speakers">Speakers</a>
-                     <a data-route="contact" href="/contact">Contact</a> -->
-                </paper-menu>
+                    <!-<a data-route="#!/speakers" href="/speakers">Speakers</a>
+                     <a data-route="contact" href="/contact">Contact</a> ->
+		     </paper-menu>-->
             </paper-header-panel>
             <div class="scroll" main>
                 <!-- Main Content -->
@@ -126,7 +126,10 @@
                             <call-to-action></call-to-action>
                             <photo-block></photo-block>-->
                             <tickets-block></tickets-block>
-                            <latest-news source="../../data/blog.json"></latest-news>
+                            <!--<latest-news source="../../data/blog.json"></latest-news>-->
+                            <featured-people source="../../data/featured-speakers.json">
+                                <h4 class="heading">Speakers Internacionales</h4>
+                            </featured-people>
                            <social-feed source="/tweetledee/searchjson.php?q=DevFestAsu&rt=recent&c=75&cache_interval=300"></social-feed>
                             <map-block></map-block>
 			                <organizer-block source="../../data/organizadores.json">
@@ -137,13 +140,13 @@
                             </logos-block>
                             <footer-block></footer-block>
                         </section>
-                        <section data-route="blog">
+                       <!-- <section data-route="blog">
                             <hero-block class="section-shadow container-before-atop" style="background: #03A9F4; color: #fff;">
                                 <div class="top-section">
                                     <div class="title-wrapper layout horizontal">
                                         <h3 class="self-end">Blog</h3>
                                     </div>
-                                    <!-- <paper-fab class="section-fab-right" icon="social:share"></paper-fab> -->
+                                    <!- <paper-fab class="section-fab-right" icon="social:share"></paper-fab> ->
                                 </div>
                             </hero-block>
                             <blog-block id="blog" class="container-atop" source="../../data/blog.json"></blog-block>
@@ -155,7 +158,7 @@
                                     <div class="title-wrapper layout horizontal">
                                         <h3 class="self-end">Speakers</h3>
                                     </div>
-                                    <!-- <paper-fab class="section-fab-right" icon="social:share"></paper-fab> -->
+                                    <!- <paper-fab class="section-fab-right" icon="social:share"></paper-fab> ->
                                 </div>
                             </hero-block>
                             <people-block id="people-block" class="container-atop" source="../../data/speakers.json" sessions-source="../../data/sessions.json"></people-block>
@@ -171,7 +174,7 @@
                             </hero-block>
                             <cod-block class="container-atop" source="../../posts/code-of-conduct.markdown"></cod-block>
                             <footer-block></footer-block>
-                        </section>
+                        </section>-->
                         <!-- <section data-route="contact">
                             <h1>Contact</h1>
 
