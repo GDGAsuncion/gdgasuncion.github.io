@@ -87,7 +87,7 @@
             source: String
         },
         peopleLoaded: function(event, response) {
-            this.people = this.(response.response).slice(0, 4);
+            this.people = (this.response.response).slice(0, 4);
         },
         randomOrder: function(array) {
             return array.sort(function() {
