@@ -1,13 +1,5 @@
 [
     {
-        "title": "Aliado General",
-        "logos": [{
-            "name": "Google",
-            "url": "https://www.google.com.py/intl/es/about/",
-            "logoUrl": "../images/partners/google.svg",
-			"category": "platinum"
-        }]
-    }, {
         "title": "Platinum sponsor",
         "logos": [{
             "name": "Ticketea",

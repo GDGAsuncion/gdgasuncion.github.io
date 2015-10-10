@@ -1,27 +1,27 @@
 [{
     "id": 1,
-    "name": "Said Tahsin Dane",
+    "name": "Nicolas Bortolotti",
     "title": "Mobile Coder",
     "company": "Startup Digest",
-    "country": "Turkey",
+    "country": "Argentina",
     "photoUrl": "../../images/people/said_tahsine_dane.jpg",
     "bio": "GDE (Google Developer Expert) for Android. Experience with Android (since Cupcake), Google Glass, Android Wear, and (even on!) iOS. Very passionate developer who tries to live on the bleeding edge of technology. Also very interested in mobile UX. <br/><br/>Active member and organizer at GDG Istanbul enjoying organizing various conferences and hackathons. Also a part of GDG[X] - a GDG related open-source organization.",
     "tags": ["Android"],
     "badges": [{
         "name": "GDE",
-        "description": "Android Google Developer Expert",
+        "description": "Developer Relation Program Manager South Region at Google",
         "link": "https://developers.google.com/experts/people/said-tahsin-dane"
     }, {
         "name": "GDG",
-        "description": "Google Developers Group Istanbul",
+        "description": "",
         "link": "https://developers.google.com/groups/chapter/100514812580249787371/"
     }],
     "socials": [{
-        "name": "Website",
-        "link": "http://www.tasomaniac.com/"
+        "name": "",
+        "link": ""
     }, {
         "name": "Twitter",
-        "link": "https://twitter.com/tasomaniac"
+        "link": "https://twitter.com/nickbortolotti"
     }, {
         "name": "GitHub",
         "link": "https://github.com/tasomaniac"
